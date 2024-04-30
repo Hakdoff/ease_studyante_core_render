@@ -41,11 +41,13 @@ class BaseProfile(BaseModelWithUUID):
     def __str__(self):
         return f'{self.user.last_name}- {self.user.first_name}'
 
+
 class Parent(BaseProfile):
 
     def __str__(self):
         return f'{self.user.last_name}- {self.user.first_name}'
-    
+
+
 class Student(BaseProfile):
     YEAR_LEVEL_CHOICES = [
         ('GRADE 7', 'Grade 7'),
